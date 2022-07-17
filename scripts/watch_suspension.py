@@ -1,4 +1,3 @@
-from calendar import month
 import tushare as ts
 import time
 import winsound
@@ -34,7 +33,7 @@ def watch():
         elif abs(rate) >= 0.2:
             print('{} {}  {}  {}  \033[1;41m{}\033[0m'.format(
                 name, stock_price, target_price, stock_index, rate))
-            winsound.Beep(800, 1000)
+            winsound.Beep(500, 800)
         else:
             print('{} {}  {}  {}  \033[0;42m{}\033[0m'.format(
                 name, stock_price, target_price, stock_index, rate))
