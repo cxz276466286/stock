@@ -35,7 +35,7 @@ def watch():
             if abs(rate) >= 0.2:
                 print('{} {}  {}  {}  \033[1;41m{}\033[0m'.format(
                     name, stock_price, target_price, szzz, rate))
-                winsound.Beep(500, 800)
+                # winsound.Beep(500, 800)
             elif abs(rate) >= 0.19:
                 print('{} {}  {}  {}  \033[1;43m{}\033[0m'.format(
                     name, stock_price, target_price, szzz, rate))

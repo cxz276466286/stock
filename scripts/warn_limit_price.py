@@ -2,7 +2,7 @@ import tushare as ts
 import time
 import winsound
 
-codes = ['000957']
+codes = ['601360']
 warning_v = 10000
 
 def watch():
