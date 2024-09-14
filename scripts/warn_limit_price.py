@@ -3,7 +3,7 @@ import time
 import winsound
 
 codes = ['601360']
-warning_v = 10000
+warning_v = 200000
 
 def watch():
     while True:

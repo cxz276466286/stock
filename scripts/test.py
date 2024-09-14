@@ -1,3 +1,18 @@
-for x in range(20):
-    for y in range(3):
-        print(x, y, pow(1.1, x), pow(1.1, x)*pow(0.9, y))
+from multiprocessing import Pool
+
+def f(x):
+    # print(x)
+    pass
+
+
+print("xxx")
+
+if __name__ == '__main__':
+    pool = Pool(processes=4)
+    for i in range(1000):
+        # start 4 worker processes
+        # evaluate "f(10)" asynchronously in a single process
+        pool.apply_async(f, (i,))
+
+    pool.close()
+    pool.join()
